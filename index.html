@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./pizza-image.png">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalhoLogoeTagA">
+            <a href="./index.html">Home</a>
+            <a href="https://github.com/JoseRobson2301">Sobre Nós</a>
+            <a id="cardapioBtn" href="#">Cardápio</a>
+            <a href="#">Onde Estamos</a>
+            <a id="btnPedido" onclick="comprarAnimation()">Fazer Pedido</a>
+        </div>
+    </header>
+    <main>
+        <div class="corpoPincipaldaPagina">
+            <div class="navbar">
+                <a id="clickPizzaBtn">Pizza</a>
+                <a id="clickPastelBtn">Pastel</a>
+                <a id="clickCoxinhaBtn">Coxinha</a>
+                <a id="clickEmpadaBtn">Empada</a>
+              </div>
+
+              <div class="opctionFood">
+                <section>
+                  <div class="pizzaFood">
+                    <section class="secPizzaFood">
+                       <div class="cardpizzaFood">
+                        <img src="./pizzaGrandeCard.avif" alt="pizza">
+                        <span>Pizza Grande</span>
+                        <span>R$25,90</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood" onclick="buyStore()">Comprar</button>
+                        </div>
+                       </div>
+                       <div class="cardpizzaFood">
+                        <img src="./pizzaPortuguesa&Calabresa1-2.avif" alt="pizza">
+                        <span>Pizza portuguesa 1/2</span>
+                        <span>R$25,90</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood" onclick="buyStore()">Comprar</button>
+                        </div>
+                       </div>
+                       <div class="cardpizzaFood">
+                        <img src="./pizzaDeAbacaxi.avif" alt="pizza">
+                        <span>Pizza de abacaxi</span>
+                        <span>R$25,90</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood" onclick="buyStore()">Comprar</button>
+                        </div>
+                       </div>
+                    </section>
+                  </div>
+                </section>
+              </div>
+
+              <div class="opctionFood02">
+                <section>
+                  <div class="pizzaFood">
+                    <section class="secPizzaFood">
+                       <div class="cardpizzaFood">
+                        <img src="./pastelComQueijo.avif" alt="pastel">
+                        <span>Pastel de Queijo</span>
+                        <span>R$3,00</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood onclick="buyStore()"">Comprar</button>
+                        </div>
+                       </div>
+                       <div class="cardpizzaFood">
+                        <img src="./pastelComCarneEQueijo.avif" alt="pastel">
+                        <span>Pastel com carne</span>
+                        <span>R$3,00</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood onclick="buyStore()"">Comprar</button>
+                        </div>
+                       </div>
+                       <div class="cardpizzaFood">
+                        <img src="./pastelVegano.avif" alt="pastel">
+                        <span>Pastel Vegano</span>
+                        <span>R$3,00</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood" onclick="buyStore()">Comprar</button>
+                        </div>
+                       </div>
+                    </section>
+                  </div>
+                </section>
+              </div>
+
+              <div class="opctionFood03">
+                <section>
+                  <div class="pizzaFood">
+                    <section class="secPizzaFood">
+                      <div class="cardpizzaFood">
+                        <img src="./coxinhaComFranco.avif" alt="coxinha">
+                        <span>Coxinha com frango</span>
+                        <span>R$3,00</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood" onclick="buyStore()">Comprar</button>
+                        </div>
+                       </div>
+                       <div class="cardpizzaFood">
+                        <img src="./coxinhaDeMandioca.avif" alt="coxinha">
+                        <span>Coxinha de mandioca</span>
+                        <span>R$3,00</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood" onclick="buyStore()">Comprar</button>
+                        </div>
+                       </div>
+                    </section>
+                  </div>
+                </section>
+              </div>
+
+              <div class="opctionFood04">
+                <section>
+                  <div class="pizzaFood">
+                    <section class="secPizzaFood">
+                      <div class="cardpizzaFood">
+                        <img src="./empoadaDePalmito.avif" alt="empada">
+                        <span>empada de palmito</span>
+                        <span>R$3,50</span>
+                        <div class="btnPizzaFood">
+                          <button id="btnComprarFood" onclick="buyStore()">Comprar</button>
+                        </div>
+                       </div>
+                    </section>
+                  </div>
+                </section>
+              </div>
+
+              <div style="margin-left: 200px; /* Valor igual à largura da navbar */">
+                <div id="menu">
+                  <h1>Cardápio</h1>
+              
+                  <div class="category">
+                    <h2 class="category-title">Pizzas</h2>
+                    <div class="item">
+                      <span class="item-name">Pizza de Calabresa</span>
+                      <span class="item-price">R$ 30,00</span>
+                    </div>
+                    <div class="item">
+                      <span class="item-name">Pizza Margherita</span>
+                      <span class="item-price">R$ 35,00</span>
+                    </div>
+                    <div class="item">
+                      <span class="item-name">Pizza Quatro Queijos</span>
+                      <span class="item-price">R$ 40,00</span>
+                    </div>
+                  </div>
+              
+                  <div class="category">
+                    <h2 class="category-title">Salgados</h2>
+                    <div class="item">
+                      <span class="item-name">Pastel de Queijo</span>
+                      <span class="item-price">R$ 5,00</span>
+                    </div>
+                    <div class="item">
+                      <span class="item-name">Coxinha de Frango</span>
+                      <span class="item-price">R$ 4,00</span>
+                    </div>
+                    <div class="item">
+                      <span class="item-name">Empada de Palmito</span>
+                      <span class="item-price">R$ 3,50</span>
+                    </div>
+                  </div>
+              
+                  <div class="category">
+                    <h2 class="category-title">Bebidas</h2>
+                    <div class="item">
+                      <span class="item-name">Refrigerante Lata</span>
+                      <span class="item-price">R$ 4,00</span>
+                    </div>
+                    <div class="item">
+                      <span class="item-name">Suco Natural</span>
+                      <span class="item-price">R$ 6,00</span>
+                    </div>
+                    <div class="item">
+                      <span class="item-name">Água Mineral</span>
+                      <span class="item-price">R$ 2,50</span>
+                    </div>
+                      <div class="BtnMenuDv">
+                        <button id="btnAnuncio" onclick="fecharAnuncio()">FECHAR ANUNCIO</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+    <script src="./script.js"></script>
+    <script src="./alert.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

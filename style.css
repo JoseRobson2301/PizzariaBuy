@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html , body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./top-view-delicious-mushroom-pizza-with-cheese-olives-tomatoes-dark-floor-italy-meal-dough-pizza-food.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecalhoLogoeTagA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px #e9e7e7 solid;
+    padding: 1pc;
+    margin-left: 5pc;
+    margin-right: 5pc;
+}
+
+.cabecalhoLogoeTagA a {
+    color: #d6d6d6;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+    font-size: 1pc;
+}
+
+.cabecalhoLogoeTagA a:nth-child(5) {
+    display: flex;
+    background-color: #fac600;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 3pc;
+    width: 8pc;
+    color: #fa1b36;
+}
+
+.cabecalhoLogoeTagA a:nth-child(5):hover {
+    color: #fa1b36;
+}
+
+.cabecalhoLogoeTagA a:hover {
+    color: rgb(240, 248, 255);
+    transform: translateX(10px);
+}
+
+.navbar {
+    width: 210px;
+    height: 22pc;
+    top: 30%;
+    left: 10%;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #9c0d1e;
+    line-height: 5.5pc;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    display: none;
+    cursor: pointer;
+  }
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e9cbd1;
+    display: block;
+    transition: .3s all cubic-bezier(0.54, 0.14, 0.56, 0.98);
+}
+
+.navbar a:hover {
+    background-color: #fac800c4;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+#menu {
+    width: 500px;
+    height: 415px;
+    margin: auto;
+    margin-top: 1pc;
+    padding: 7px;
+    position: fixed;
+    line-height: 15px;
+    background-color: #fac600;
+    border-radius: 5px;
+}
+
+
+#menu span {
+    color: #fa1b36;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#menu h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#menu h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#btnAnuncio {
+    border-radius: 5px;
+    border: 1px solid #fac600;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    cursor: pointer;
+    padding: 0.5pc;
+    background-color: #fa1b36;
+    cursor: -moz-zoom-out;
+}
+
+#btnAnuncio:active {
+    cursor: progress;
+    animation-delay: 2s;
+}
+
+.BtnMenuDv {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #666666;
+}
+
+.category {
+    margin-bottom: 10px;
+}
+
+.category-title {
+    color: #333333;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    color: #333333;
+}
+
+.item-price {
+    color: #666666;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fac600;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 15px;
+    border-radius: 2px;
+}
+
+th {
+    background-color: #ffc107;
+    color: #fffefe;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #fa1b36;
+}
+
+tr:hover {
+    background-color: #ffa8a8;
+}
+
+.opctionFood {
+    display: none;
+}
+
+.opctionFood02 {
+    display: none;
+}
+
+.opctionFood03 {
+    display: none;
+}
+
+.opctionFood04 {
+    display: none;
+}
+
+.secPizzaFood {
+    display: grid;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cardpizzaFood {
+    background-color: #fac600;
+    width: 250px;
+    height: 250px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    opacity: 95%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: .3s all ease-in-out;
+}
+
+.cardpizzaFood:hover {
+    transform: scale(1.05);
+    filter: br(50px)
+}
+
+.cardpizzaFood button {
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    border: none;
+    width: 10pc;
+    height: 2pc;
+    background-color: #9c0d1e;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+
+.btnPizzaFood {
+    display: flex;
+    justify-content: center;
+}
+
+.cardpizzaFood button:hover {
+    transform: scale(1.05);
+}
+
+.cardpizzaFood img {
+    height: 120px;
+    border-radius: 10px;
+}
+
+::selection {
+    background-color: #9c0d1e;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    a {
+        display: flex;
+        text-align: -webkit-center;
+    }
+
+    .cabecalhoLogoeTagA {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-evenly;
+      
+    }
+
+    .cabecalhoLogoeTagA a {
+        font-size: 9px;
+        padding-left: 0px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .imgIlustrativo {
+        position: absolute;
+        width: 350px;
+        left: 20px;
+        top: 400px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 115px;
+        left: 40px;
+        line-height: 80px;
+        opacity: 80%;
+    }
+
+    html, body {
+        margin: 1px;
+        padding: 1px;
+    }
+  
+    .cabecalhoLogoeTagA a:nth-child(1) {
+      display: none;
+    }
+
+    .cabecalhoLogoeTagA a:nth-child(2) {
+      display: none;
+    }
+  
+    .cabecalhoLogoeTagA a:nth-child(5) {
+        width: 80px;
+        height: 40px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .cabecalhoLogoeTagA a:nth-child(5):hover {
+        color: #fa1b36;
+    }
+
+    .cabecalhoLogoeTagA a:hover {
+        transition: .3s all cubic-bezier(0.43, 1.52, 0.77, 1.19);
+    }
+
+    .opctionFood {
+        position: absolute;
+        width: 280px;
+        top: 32%;
+        left: 70px;
+    }
+
+    .opctionFood02 {
+        position: absolute;
+        width: 280px;
+        top: 42%;
+        left: 90px;
+    }
+
+    .opctionFood03 {
+        position: absolute;
+        width: 280px;
+        top: 55%;
+        left: 90px;
+    }
+
+    .opctionFood04 {
+        position: absolute;
+        width: 280px;
+        top: 60%;
+        left: 90px;
+    }
+
+    #menu {
+    width: 250px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 1pc;
+    padding: 20px;
+    position: absolute;
+    left: 13%;
+    background-color: #fac600;
+    border-radius: 5px;
+    line-height: 15px;
+    opacity: 90%;
+  }
+
+    #btnAnuncio {
+        position: absolute;
+        left: 28%;
+        top: 98%;
+    }
+
+    .secPizzaFood {
+        display: block;
+    }
+
+    .cardpizzaFood {
+        width: 13em;
+        height: 13em;
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .cardpizzaFood img {
+        width: 9em;
+        height: 7em;
+    }
+}
