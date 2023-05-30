@@ -49,11 +49,11 @@ function fecharAnuncio() {
 
 function buyStore() {
     window(Swal.fire({
-        title: 'Deseja agora?',
+        title: 'Deseja Comprar?',
         text: "Você deseja comprar agora!",
-        icon: 'warning',
+        icon: 'info',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
+        confirmButtonColor: '#3bd630',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Comfirmar a compra'
       }).then((result) => {

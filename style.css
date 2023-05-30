@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import '@sweetalert2/themes/dark/dark.scss';
+
 
 html , body {
     margin: 0;
@@ -246,10 +248,6 @@ tr:hover {
 .btnPizzaFood {
     display: flex;
     justify-content: center;
-}
-
-.cardpizzaFood button:hover {
-    transform: scale(1.05);
 }
 
 .cardpizzaFood img {
