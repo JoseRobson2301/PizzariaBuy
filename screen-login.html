@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TELA DE LOGIN</title>
+  <title>Pizzaria Login</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+    body {
+  background-color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
 
-    <style>
+.container {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+  padding: 20px;
+}
 
-        body {
-            padding: 0;
-            margin: 0;
-            background-image: url(./fundio022.png);
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
 
-        .screen-login{
-            display: flex;
-            flex-direction: column;
-        }
+input {
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 
-        h3 {
-            text-align: center;
-        }
-
-        label {
-            text-align: center;
-        }
+input[type="submit"] {
+  background-color: #00A000;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+    
     </style>
 </head>
 <body>
-    <main>
-            <div class="screen-login">
-                <h3>TELA DE LOGIN</h3>
-                <label for="">USUARIO</label>
-                <input type="text" placeholder="USUARIO" required>
-                <br>
-                <label for="">SENHA</label>
-                <input type="password" placeholder="SENHA" required>
-                <br>
-                <button id="btnEnviar">ENVIAR</button>
-            </div>
-    </main>
+  <div class="container">
+    <h1>Pizzaria Login</h1>
+    <form action="login.php" method="post">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" value="Login">
+    </form>
+  </div>
 </body>
-    <script>
-
-    </script>
 </html>
